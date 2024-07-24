@@ -1,0 +1,82 @@
+
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dados de Arquivos CSV</title>
+  <style>
+    html, body {
+      height: 100%; /* Garante que a altura do corpo ocupe 100% da altura da janela */
+      margin: 0; /* Remove margens padrão */
+    }
+    body {
+      background-image: url('caminho/para/sua/imagem.jpg'); /* Caminho para a imagem de fundo */
+      background-size: cover; /* Faz com que a imagem cubra toda a área */
+      background-position: center; /* Centraliza a imagem */
+      background-repeat: no-repeat; /* Evita a repetição da imagem */
+      text-align: center; /* Texto centralizado */
+      font-family: Arial, sans-serif; /* Fonte mais moderna */
+      display: flex; /* Usado para centralizar o conteúdo */
+      flex-direction: column; /* Organiza o conteúdo em uma coluna */
+      align-items: center; /* Centraliza horizontalmente */
+      justify-content: center; /* Centraliza verticalmente */
+    }
+    header {
+      background-color: rgba(76, 175, 80, 0.8); /* Cor de fundo do header com transparência */
+      color: white; /* Cor do texto no header */
+      padding: 10px 0;
+      font-size: 24px;
+      width: 100%; /* Ocupa toda a largura */
+      position: absolute; /* Posiciona o header no topo da página */
+      top: 0;
+      left: 0;
+      text-align: center;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: column; /* Alinha os botões em uma coluna */
+      gap: 10px; /* Espaço entre os botões */
+    }
+    button {
+      background-color: #008CBA; /* Cor de fundo dos botões */
+      color: white; /* Cor do texto dos botões */
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px; /* Cantos arredondados */
+    }
+    footer {
+      background-color: rgba(76, 175, 80, 0.8); /* Cor de fundo do rodapé com transparência */
+      color: white; /* Cor do texto no rodapé */
+      padding: 10px 0;
+      width: 100%; /* Ocupa toda a largura */
+      text-align: center;
+      font-size: 14px;
+      position: absolute; /* Posiciona o rodapé no fundo da página */
+      bottom: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>AgroMonitor</header>
+  
+  <div class="button-container">
+    <button onclick="window.location.href='/content/agrofy_data.csv'">Agrofy</button>
+    <button onclick="window.location.href='/content/climatempo.csv'">Clima Tempo</button>
+    <button onclick="window.location.href='/content/embrapanoticias.csv'">Noticias Embrapa</button>
+    <button onclick="window.location.href='/content/filtered_cnptia2.csv'">Doenças da soja</button>
+  </div>
+  
+  <footer>
+    &copy; 2024 AgroMonitor - Todos os direitos reservados.
+  </footer>
+</body>
+</html>
+
+  
